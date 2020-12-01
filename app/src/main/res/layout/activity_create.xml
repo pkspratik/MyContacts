@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/camera"
+        android:id="@+id/image_camera"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_camera"
+        android:hint="Enter Name"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:id="@+id/edt_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:hint="Enter No"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="30dp"
+        android:id="@+id/edt_number"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_number"
+        android:id="@+id/btn_save"/>
+
+</RelativeLayout>
